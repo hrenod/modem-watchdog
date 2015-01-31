@@ -15,4 +15,4 @@ function check {
   fi
 }
 
-check | awk -v date="$(date +'%Y-%m-%d %r')" '{ print date, $0}' >> /tmp/checker.log
+check | awk -v date="$(date +'%Y-%m-%d %r')" '{ print date, $0}' >> /var/log/checker/checker.log
