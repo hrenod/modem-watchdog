@@ -1,10 +1,10 @@
 #!/bin/bash
 
 function check {
-  ping -w 1 -c 5 -q 8.8.8.8 
+  ping -w 5 -c 5 -q 8.8.8.8
   status=$?
   
-  if [[ $status == 1 ]]; then
+  if [[ $status == 0 ]]; then
     echo "Connection Alive"
   else
     echo "Connection Dead. Switching the modem off"
