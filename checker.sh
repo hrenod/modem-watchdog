@@ -23,7 +23,7 @@ function check {
   else
     echo "Connection Dead. Switching the modem off"
     modem_off
-    sleep 10
+    sleep $TIMEOUT
     modem_on
     echo "Switching the modem on"
   fi
