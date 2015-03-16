@@ -5,9 +5,11 @@ Requirements
 Installation
 ============
 ```bash
+cp env.conf.example env.conf
 mkdir /var/log/checker
 chown -R pi /var/log/checker
 ```
+Set WebIOPi credentials and GPIO pin number in env.conf 
 
 Crontab
 -------
