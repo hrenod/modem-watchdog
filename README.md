@@ -1,3 +1,7 @@
+Requirements
+============
+[WebIOPi](http://sourceforge.net/projects/webiopi/files/)
+
 Installation
 ============
 ```bash
@@ -8,7 +12,7 @@ chown -R pi /var/log/checker
 Crontab
 -------
 ```
-* * * * * /home/pi/checker/checker.sh
+*/5 * * * * cd /home/pi/checker; ./checker.sh
 ```
 
 Logrotate
