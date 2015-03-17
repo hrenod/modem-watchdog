@@ -15,7 +15,7 @@ function modem_off {
 }
 
 function check {
-  ping -w 5 -c 5 -q 8.8.8.8
+  ping -w 30 -c 5 -q 8.8.8.8
   status=$?
   
   if [[ $status == 0 ]]; then
